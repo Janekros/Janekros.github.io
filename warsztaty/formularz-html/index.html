@@ -8,13 +8,16 @@
 
 <body>
     <form action="https://formspree.io/janekrosochacki@gmail.com" method="post">
-        <label>Imię<input type="text" name="name"></label>
-        <label>Nazwisko<input type="text" name="surname"></label>
-        <label>E-mail<input type="email" name="e-mail"></label>
-        <label>Numer telefonu <input type="number" name="number"></label>
+        <label id="name">Imię<input type="text" name="name"></label>
         <br>
-        <textarea placeholder="Wiadomosc" name="wiadomosc"></textarea>
-        <br> 
+        <label id="surname">Nazwisko<input type="text" name="surname"></label>
+        <br>
+        <label id="e-mail">E-mail<input type="email" name="e-mail"></label>
+        <br>
+        <label id="number">Numer telefonu <input type="tel" name="number"></label>
+        <br>
+        <label id="message">Wiadomość<textarea name="message"></textarea></label>
+        <br>
         <input type="submit">
     </form>
 
