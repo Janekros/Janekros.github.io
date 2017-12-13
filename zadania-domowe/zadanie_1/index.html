@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Zadanie 1</title>
+    <title>Zadanie1</title>
 </head>
+
 <body>
-   <p>Rozwiązanie zadania 1</p>
-    
+    <h1>Formularz uczestnika</h1>
+
+    <form action="https://formspree.io/janekrosochcki@gmail.com" method="post">
+            <input type="text" id="name" name="name">
+            <label for="name">Imię</label>
+            <br>
+            <br>
+
+            <input type="text" id="surname" name="surname">
+            <label for="surname">Nazwisko</label>
+            <br>
+            <br>
+
+            <input type="text" id="mail" name="email">
+            <label for="mail">Adres email</label>
+            <br>
+            <br>
+
+            <input type="text" id="phone" name="phone">
+            <label for="phone">Numer telefonu</label>
+            <br>
+            <br>
+
+            <select name="city" id="city">
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+            </select>
+            <br>
+            <br>
+
+            <p>Wybierz płeć</p>
+
+            <input type="radio" id="woman" name="gender">
+            <label for="woman">Kobieta</label>
+            <br>
+            <input type="radio" id="man" name="gender">
+            <label for="man">Mężczyzna</label>
+            <br>
+            <br>
+
+            <input type="checkbox" id="agree">
+            <label for="agree">Wyrażam zgodę na przetwarzanie moich danych osobowych w celach zapisania na kurs.</label>
+            <br>
+            <br>
+
+            <p>Wiadomość</p>
+
+            <textarea name="textarea" id="message"></textarea>
+            <input type="submit" value="Wyślij wiadomość">
+    </form>
 </body>
+
 </html>
