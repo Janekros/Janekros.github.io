@@ -30,6 +30,6 @@ fieldset#Books input#quantity {
 }
 
 input[type=submit] {
-    border: 1px blue solid;
+    border: 1px #2d2dd1 solid;
     border-radius: 3px;
 }
