@@ -1,5 +1,5 @@
 body {
-    width: 95%;
+    width: 800px;
 }
 
 h2 {
@@ -26,7 +26,7 @@ fieldset#Books select {
 }
 
 fieldset#Books input#quantity {
-    width: 18%;
+    width: 25%;
 }
 
 input[type=submit] {
