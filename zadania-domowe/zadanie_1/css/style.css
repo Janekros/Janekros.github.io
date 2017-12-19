@@ -1,0 +1,48 @@
+form {
+    background-color: #213b50;
+    padding: 20px;
+    color: #fff;
+}
+
+form label {
+    display: block;
+    height: 20px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+input,
+textarea,
+select {
+    background-color: #2b4a64;
+    border: #2b4a64 2px solid;
+    color: #fff;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #4e708c;
+    border-width: 2px; 
+    border-color: #fff;
+/*    zamiast border można zrobić outline */
+}
+
+form input[type="submit"] {
+    background-color: green;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    border: green 1px solid;
+}
+
+form input[type="submit"]:hover {
+    border: green 1px solid;
+    background-color: darkgreen;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    float: left
+/* żeby label od ratio i checkbox nie były pod spodem to używamy float (opływa z...tutaj akrat z lewej) */
+}

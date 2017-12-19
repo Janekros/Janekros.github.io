@@ -1,0 +1,35 @@
+body {
+    width: 95%;
+}
+
+h2 {
+    color: #298b8b;
+    font-weight: 700;
+}
+
+h3 {
+    color: #30a7a7;
+    font-weight: 300;
+}
+
+fieldset#Customer-info div.customer {
+    margin-left: 40px;
+}
+
+fieldset#Customer-info input.customer {
+    width: 50%;
+}
+
+fieldset#Books select {
+    width: 45%;
+    margin-left: 40px;
+}
+
+fieldset#Books input#quantity {
+    width: 18%;
+}
+
+input[type=submit] {
+    border: 1px blue solid;
+    border-radius: 3px;
+}
