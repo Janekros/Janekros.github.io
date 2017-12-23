@@ -20,7 +20,7 @@ fieldset#Customer-info input.customer {
     width: 50%;
 }
 
-fieldset#Books select {
+fieldset#Books #books {
     width: 45%;
     margin-left: 40px;
 }
