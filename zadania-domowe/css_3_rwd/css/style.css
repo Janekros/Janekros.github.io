@@ -1,14 +1,9 @@
-img {
-    width: 100%;
-    position: absolute;
-}
-
 figure{
     position: relative;
+    height: 100vh;
 }
 
 header {
-    position: absolute;
     font-size: 2vw;
     color: white;
     font-weight: 900;
@@ -16,4 +11,9 @@ header {
 
 span {
     font-size: 3vw;
+}
+
+img {
+    position: absolute;
+    width: 100%;
 }
