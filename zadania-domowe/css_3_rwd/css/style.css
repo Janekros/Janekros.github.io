@@ -1,0 +1,13 @@
+img {
+    width: 100%;
+    position: absolute;
+}
+
+figure{
+    position: relative;
+}
+
+header{
+    position: absolute;
+    height: 50%;
+}
