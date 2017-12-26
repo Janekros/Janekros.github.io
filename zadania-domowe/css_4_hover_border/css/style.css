@@ -1,4 +1,44 @@
-img {
+center {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+div.first-container {
     display: inline-block;
-    width: 50%;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    border: 0px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+div.img::before {
+    content: "LAKE VIEW";
+    color: white;
+    background-color: rgba(10, 10, 10, 0.8);
+    background-size: cover;
+    font-size: 30px;
+    position: absolute;
+    top: 35%;
+    width: 60%;
+    display: inline-block;
+    z-index: 10;
+    opacity: 0;
+}
+
+div:hover::before {
+    opacity: 1;
+    font-size: 50px;
+    text-align: center;
+    transition: all 5s linear 1s;
+}
+
+img:hover {
+    border-width: 5px;
+    transition: border-width 5s linear 1s;
 }
