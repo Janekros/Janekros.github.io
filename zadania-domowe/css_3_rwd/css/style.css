@@ -7,7 +7,13 @@ figure{
     position: relative;
 }
 
-header{
+header {
     position: absolute;
-    height: 50%;
+    font-size: 2vw;
+    color: white;
+    font-weight: 900;
+}
+
+span {
+    font-size: 3vw;
 }

@@ -1,0 +1,28 @@
+@media (min-width: 1170px) {
+    header {
+        top: 30vw;
+        left: 4vw;
+    }
+    img[alt=img2] {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1170px) {
+    header {
+        top: 20vw;
+        right: 4vw;
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        position: absolute;
+        color: black;
+        top: 60vw;
+        left: 30%;
+    }
+        img[alt=img2] {
+        opacity: 0;
+    }
+}
