@@ -1,37 +1,57 @@
-@media (min-width: 1000px) {
-    
-    img {
-        width: 100%;
+@media (min-width: 800px) {
+
+    #header {
+        background-image: url(../img/man-1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        position: relative;
     }
-    
-    header {
-        top: 30vw;
-        left: 4vw;
+
+    h1 {
         position: absolute;
-    }
-    
-    img[alt=img2] {
-        opacity: 0;
+        color: white;
+        margin-top: 200px;
+        margin-left: 30px;
     }
 }
 
-@media (min-width: 700px) and (max-width: 1000px) {
-    header {
-        top: 20vw;
-        right: 4vw;
+@media (min-width: 500px) and (max-width: 800px) {
+    #header {
+        background-image: url(../img/man-2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        position: relative;
     }
-    
-    
-    
+
+    h1 {
+        position: absolute;
+        color: white;
+        margin-top: 100px;
+        right: 30px;
+    }
 }
 
-@media (max-width: 700px) {
-    header {
-        color: black;
+@media (max-width: 500px) {
+    #header {
+        background-image: url(../img/man-1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50%;
+        position: relative;
         text-align: center;
-        
     }
-        img[alt=img2] {
-        opacity: 0;
+    
+     h1 {
+        position: absolute;
+         color: black;
+        margin-top: 350px;
+         margin-left: 30%;
+         
     }
+
 }

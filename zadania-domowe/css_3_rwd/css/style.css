@@ -1,19 +1,18 @@
-figure{
-    position: relative;
-    height: 100vh;
+html,
+body {
+    height: 100%;
 }
 
-header {
+* {
+    box-sizing: border-box;
+}
+
+h1 {
     font-size: 2vw;
-    color: white;
+    color: black;
     font-weight: 900;
 }
 
 span {
     font-size: 3vw;
-}
-
-img {
-    position: absolute;
-    width: 100%;
 }

@@ -1,38 +1,19 @@
-div.first-container {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 100%;
+div.img {
+    position: relative;
     text-align: center;
-}
-
-img {
-    border: 0px solid black;
-    padding: 5px;
-    box-sizing: border-box;
 }
 
 div.img::before {
-    content: "LAKE VIEW";
-    color: white;
-    background-color: rgba(10, 10, 10, 0.8);
-    background-size: cover;
-    font-size: 30px;
+    content: " ";
+    outline: inherit;
+    border-top: 0px solid black;
+    border-left: 0px solid black;
     position: absolute;
-    top: 35%;
-    display: inline-block;
-    z-index: 10;
-    opacity: 0;
-    text-align: center;
 }
 
 div:hover::before {
     opacity: 1;
-    font-size: 50px;
-    text-align: center;
+    border-top: 10px solid black;
+    border-left: 10px solid black;
     transition: all 5s linear 1s;
-}
-
-img:hover {
-    border-width: 5px;
-    transition: border-width 5s linear 1s;
 }
