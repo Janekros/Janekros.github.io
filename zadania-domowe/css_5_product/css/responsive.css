@@ -1,0 +1,19 @@
+@media all and (max-width: 992px) {
+    .yerba {
+        width: 48%;
+    }
+
+    .koszyk i {
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .yerba {
+        width: 100%;
+    }
+
+    .koszyk i {
+        text-align: center;
+    }
+}
