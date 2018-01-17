@@ -1,0 +1,42 @@
+.container {
+    width: 100%;
+    height: 300px;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.header {
+    width: 100%;
+    height: 15%;
+    background-color: red;
+}
+
+.header p {
+    top: 50%;
+}
+
+.box.lorem {
+    background-color: aqua;
+}
+
+.box.aside.left {
+    background-color: green;
+}
+
+.box.aside.right {
+    background-color: pink;
+}
+
+.footer {
+    width: 100%;
+    height: 15%;
+    background-color: violet;
+}
+
+.footer p {
+    top: 50%;
+}
