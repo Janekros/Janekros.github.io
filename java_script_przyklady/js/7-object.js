@@ -59,7 +59,17 @@ class osoba {
     }
 
     wskaznikBMI() {
-        return this.weight/(this.height*this.height);
+        return this.weight / (this.height * this.height);
+    }
+
+    bmiMessage() {
+        if (this.wskaznikBMI() < 18) {
+            console.log('masz niedowagę')
+        } else if (this.wskaznikBMI() > 18 && this.wskaznikBMI() < 26) {
+            console.log('jest ok')
+        } else {
+            console.log('masz nadwagę')
+        }
     }
 }
 
@@ -75,3 +85,9 @@ return this.weight/Math.pow(this.heigth, 2);
 
 var currentBMI = new osoba(1.82, 82);
 console.log(currentBMI.wskaznikBMI());
+
+currentBMI.bmiMessage();
+
+var nowaOsoba = new osoba(1.8, 50);
+
+nowaOsoba.bmiMessage();
