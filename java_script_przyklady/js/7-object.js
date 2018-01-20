@@ -1,6 +1,6 @@
 'use strict'
 
-var janek = {
+/*var janek = {
     customerName: 'Jan Rosochacki', //tutaj zawsze przecinek
     phoneNumber: 517547596,
     orderConfirmation: function() {
@@ -18,7 +18,7 @@ var marcin = {
 
 /* dwa sposoby na wyciągnięcie danych z obiektu */
 
-console.log(marcin.phoneNumber);
+/*console.log(marcin.phoneNumber);
 console.log(marcin['customerName']);
 
 janek.orderConfirmation();
@@ -31,4 +31,47 @@ var kowalski = {
     }
 }
 
-kowalski.orderConfirmation();
+kowalski.orderConfirmation();*/
+
+class Customer {
+    constructor(customerName, phoneNumber) {
+        this.name = customerName;
+        this.phone = phoneNumber;
+    }
+
+    orderConfirmation() { /* bez function bo to jest metoda a nie funkcja */
+        console.log(this.name + 'właśnie złozył zamówienie');
+    }
+}
+
+var currentCustomer = new Customer('Jan Rosochacki', 123456789);
+console.log(currentCustomer);
+console.log(currentCustomer.name);
+
+var currentCustomer = new Customer('Krzysztof Kowalski', 123456789);
+
+console.log(currentCustomer)
+
+class osoba {
+    constructor(height, weight) {
+        this.height = height;
+        this.weight = weight;
+    }
+
+    wskaznikBMI() {
+        return this.weight/(this.height*this.height);
+    }
+}
+
+/* można to zrobić innym sposobem:
+function osoba(height, weight) {
+this.height = height;
+this.weight = weight;
+this.liczBMI = function() {
+return this.weight/Math.pow(this.heigth, 2);
+}
+}
+*/
+
+var currentBMI = new osoba(1.82, 82);
+console.log(currentBMI.wskaznikBMI());
