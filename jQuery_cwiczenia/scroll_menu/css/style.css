@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+
+#main-header {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+}
+
+#main-nav {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#main-nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+#main-nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    float: left;
+    margin: 0 10px;
+}
