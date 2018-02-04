@@ -1,0 +1,70 @@
+/* General styles */
+
+body {
+	font-family: 'RobotoSlab', sans-serif;
+}
+
+/* Nav */
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+	color: #fff;
+	transition: all .3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-brand:hover {
+	color: #0ed8d6;
+}
+
+.navbar-light .navbar-brand {
+	font-family: 'Droid Serif', sans-serif;
+	font-size: 2em;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Header */
+
+#main-header {
+	height: 100vh;
+	background-image:  linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/header/pictures_on_the_wall.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#main-header .header-caption {
+	color: #fff;
+}
+
+#main-header .header-caption h2 {
+	font-family: 'Droid Serif', sans-serif;
+	font-size: 3em;
+}
+
+#main-header .header-caption h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 4em;
+	margin: 30px 0;
+}
+
+#main-header .header-caption a {
+	background-color: #0ed8d6;
+	font-family: 'Montserrat', sans-serif;
+	border: 1px solid #0ed8d6;
+	transition: all .3s;
+	
+}
+
+#main-header .header-caption a:hover {
+	background-color: #fff;
+	color: #0ed8d6;
+}
+
+

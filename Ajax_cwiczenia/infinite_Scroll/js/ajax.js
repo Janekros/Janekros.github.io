@@ -1,7 +1,3 @@
-//document.getElementById('button').addEventListener('click', function() {
-
-//definicja funkcji Ajax
-
 function ajax(method, url) {
     // utworzenie obiektu XMLHttpRequest
     var httpReq = new XMLHttpRequest();
@@ -41,33 +37,40 @@ function ajax(method, url) {
 
     httpReq.onsuccess = function(response) {
         var jsonObj = JSON.parse(response);
-        var paragraf_1 = document.createElement('p');
-        var paragraf_2 = document.createElement('p');
-        var paragraf_3 = document.createElement('p');
+        /*console.log(jsonObj); //ja wpiszemy w nawiasie np. jsonObj.userID to wyciąga nam tylko wartość tego klucza
+        jsonObj.forEach(function(element, index) {
+            console.log(jsonObj[index].id);
+            console.log(jsonObj[index].username);
+            console.log(jsonObj[index].website);
+         
         
-        paragraf_1.innerHTML = jsonObj.userId;
-        paragraf_2.innerHTML = jsonObj.userName;
-        paragraf_3.innerHTML = jsonObj.userURL;
+        });*/
+            var beginOfData = document.createElement('p');
+            var endOfData = document.createElement('p');
+            
+            beginOfData.innerHTML = '<br>------- BEGIN OF DATA -------<br>';
+            endOfData.innerHTML = '<br>------- END OF DATA -------<br>';
         
-        document.body.appendChild(paragraf_1);
-        document.body.appendChild(paragraf_2);
-        document.body.appendChild(paragraf_3);
+        document.body.appendChild(beginOfData);
         
+        for(var i in jsonObj) {
+            var userId = document.createElement('p');
+            var userName = document.createElement('p');
+            var userWebsite = document.createElement('p');
+            
+            userId.innerHTML = jsonObj[i].id;
+            userName.innerHTML = jsonObj[i].username;
+            userWebsite.innerHTML = jsonObj[i].website;
+            
+            document.body.appendChild(userId);
+            document.body.appendChild(userName);
+            document.body.appendChild(userWebsite);
+            
+        }
+        document.body.appendChild(endOfData);
     }
     
     // wysyłame żądania do serwera
     httpReq.send();
     
 }
-
-//ajax ('GET', 'http://echo.jsontest.com/userId/108/userName/Akademia108/userURL/akademia108.pl')
-
-function pobierzDane() {
-    document.getElementById('button').addEventListener('click', function() {
-        ajax ('GET', 'http://echo.jsontest.com/userId/108/userName/Akademia108/userURL/akademia108.pl')
-        });
-}
-
-pobierzDane();
-
-// można zrobić to bez funkcji pobierzDane!!!!!!!!!!!1
