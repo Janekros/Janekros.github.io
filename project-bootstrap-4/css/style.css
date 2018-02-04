@@ -1,7 +1,32 @@
 /* General styles */
 
 body {
-	font-family: 'RobotoSlab', sans-serif;
+	font-family: 'Roboto Slab', sans-serif;
+    color: #777777;
+}
+
+h1, h2, h3, h3, h4, h5, h6 {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 60px 0; 
+}
+
+.section-header{
+    margin-bottom: 70px;
+}
+
+.section-header p {
+    font-family: 'Droid Serif', sans-serif;
+    margin-top: 25px;
 }
 
 /* Nav */
@@ -67,4 +92,73 @@ body {
 	color: #0ed8d6;
 }
 
+/* Services */
+
+#services .service-item i {
+    display: inline-block;
+    border: 1px solid white;
+    border-color: #0ed8d6;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 70px;
+    background-color: #0ed8d6;
+    color: white;
+    transition: all 1s;
+}
+
+#services .service-item i:hover {
+    background-color: #fff;
+    color: #0ed8d6;
+    transform: rotate(360deg);
+}
+
+/* Portfolio */
+
+#portfolio  {
+    background-color: #f7f7f7;
+}
+
+#portfolio .portfolio-image-holder {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#portfolio .portfolio-image-holder img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 1s;
+}
+
+#portfolio .portfolio-image-holder:hover img {
+    transform: scale(1.5);
+}
+
+#portfolio .portfolio-image-holder .portfolio-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 216, 214, 0.6);
+    top: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#portfolio .portfolio-image-holder .portfolio-mask:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item figcaption {
+    background-color: #fff;
+    padding: 20px 0;
+}
 
