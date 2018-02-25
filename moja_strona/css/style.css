@@ -18,7 +18,7 @@ h2 {
 }
 
 span {
-    color: #1a2dc0;
+    color: #9ba1ab;
 }
 
 section h2,
@@ -34,7 +34,7 @@ h1 {
 
 #main-nav {
     position: fixed;
-    background-color: azure;
+    background-color: #f0f0f0;
     width: 100%;
     right: 0;
     top: 0;
@@ -70,12 +70,16 @@ h1 {
 /*właściwości header z imieniem i nazwiskiem*/
 
 #main-header {
-    background-image: url(../img/wintry.jpg);
+    background-image: url(../img/background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #fff;
+    color: #9ba1ab;
     text-align: center;
+}
+
+#main-header h1 {
+    color: #fff;
 }
 
 #main-header .main-header-content {
@@ -91,9 +95,8 @@ h1 {
 #about {
     padding: 0 80px 10px;
     width: 100%;
-    background-color: #f9fcfe;
+    background-color: #f0f0f0;
     overflow: hidden;
-    background-color: azure;
 }
 
 #about h2 {
@@ -124,7 +127,7 @@ h1 {
 
 #skills {
     text-align: center;
-    background-color: azure;
+    background-color: #f0f0f0;
     padding-bottom: 50px;
 }
 
@@ -166,7 +169,7 @@ h1 {
 }
 
 #contact .contact-data .email {
-    color: #1ac056;
+    color: #9ba1ab;
 }
 
 #contact form input,
@@ -188,7 +191,7 @@ h1 {
     float: right;
     text-transform: uppercase;
     border: 1px solid #fff;
-    background-color: #1ac056;
+    background-color: #57e5e5;
     color: #fff;
     font-weight: 600;
     width: auto;
@@ -196,7 +199,7 @@ h1 {
 
 #contact form input[type=submit]:hover {
     background-color: #fff;
-    color: #1ac056;
+    color: #57e5e5;
 }
 
 #contact i {
