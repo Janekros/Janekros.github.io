@@ -1,0 +1,25 @@
+#accordion-handler {
+    width: 50%;
+    background-color: aquamarine;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.accordion-item h2 {
+    border:  2px solid blue;
+    padding: 15px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.accordion-item p {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: all 1s;
+}
+
+.accordion-item p.visible {
+    height: 100px;
+    
+}
