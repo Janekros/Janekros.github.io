@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio_Janek</title>
+
+    <!-- link do czcionek google (fonts.google.com) -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- link do czcionki ze strony fontawesome.com znajdującej się lokalnie (lepiej robić odnośniki lokalne) -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- link to style-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- link do responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <nav id="main-nav">
+       <label class="toggle" for="drop">Menu</label>
+        <input type="checkbox" id="drop">
+            <ul>
+                <li><a href="#about">o mnie</a></li>
+                <li><a href="#skills">umiejętności</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">kontakt</a></li>
+            </ul>
+    </nav>
+
+    <header id="main-header">
+        <div class="main-header-content">
+            <h1>Jan <span>Rosochacki</span></h1>
+            <h2>Front-End Developer</h2>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>O <span>mnie</span></h2>
+        <figure>
+            <img src="img/jan-nowak.jpg" alt="">
+        </figure>
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dignissimos nisi accusantium fugiat necessitatibus a nostrum expedita quidem? Itaque fugit, sint voluptatum repellendus! Laudantium animi sit molestiae ipsam dicta sint dolore fugit ullam repellendus officia suscipit debitis nulla tempore cupiditate earum perspiciatis magni totam, neque inventore unde non. Quidem ad id earum eaque quos, eum. Non adipisci, est necessitatibus maxime perferendis veniam, dolores pariatur magni dignissimos laborum tenetur molestiae velit modi quas consectetur cupiditate minus cum hic. Unde quae perspiciatis esse eligendi dolorem optio debitis ex aliquam veniam saepe quis beatae, dolore doloribus consequatur ducimus commodi sint rem totam vel.</p>
+        </article>
+    </section>
+
+    <section id="skills">
+        <h2>Moje <span>umiejętności</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis eos libero, nulla voluptate tenetur alias eius itaque optio at magnam.</p>
+        <div id="skills-icons"></div>
+        <figure>
+            <img src="icons/html5.png" alt="">
+            <figcaption>HTML5</figcaption>
+        </figure>
+        <figure>
+            <img src="icons/css3.png" alt="">
+            <figcaption>CSS3</figcaption>
+        </figure>
+        <figure>
+            <img src="icons/js.png" alt="">
+            <figcaption>JavaScript</figcaption>
+        </figure>
+        <figure>
+            <img src="icons/jquery.png" alt="">
+            <figcaption>jQuery</figcaption>
+        </figure>
+    </section>
+
+    <section id="portfolio">
+        <h2>Moje <span>Portfolio</span></h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item" id="portfolio-item1">
+            </div>
+            <div class="portfolio-item" id="portfolio-item2">
+                <div class="item-mask">
+                    <div class="item-content">
+                        <div class="item-content-inner">
+                            <h3>Lorem ipsum</h3>
+                            <p>Opis projektu Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, qui.</p>
+                            <h4>Wykorzystane technologie</h4>
+                            <p>HTMTL5, CSS3, RWD, Bootstrap, JavaScript, JQuery</p>
+                            <a href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" id="portfolio-item3"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-data">
+            <h2>Jan <span>Rosochacki</span></h2>
+            <address>
+                <p class="street">ul.Mostowa 6/13</p>
+                <p class="city">31-061 Kraków</p>
+                <br>
+                <p class="tel">tel:606745759</p>
+             <p>email:
+                 <a href="mailto:janekrosochacki@gmail.com">janekrosochacki@gmail.com</a>
+             </p>
+            </address>
+            <div class="contact-social-icons">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://plus.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://pl.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" name="name" id="name" placeholder="Imię i Nazwisko">
+                <br>
+                <input type="email" id="email" name="email" placeholder="E-mail">
+                <br>
+                <textarea name="message" id="message" placeholder="Treść wiadomości"></textarea>
+                <br>
+                <input type="submit" value="Wyślij">
+            </form>
+
+        </div>
+    </section>
+    <footer>
+        <p>
+            Copyright<a href=""><i class="fa fa-copyright"></i></a> Jan Rosochacki
+        </p>
+    </footer>
+
+</body>
+
+</html>
